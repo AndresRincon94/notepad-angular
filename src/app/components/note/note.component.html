@@ -1,0 +1,10 @@
+<section class="notes-container">
+  @for (note of notes; track note.id) {
+    <div class="note-wrapper" [class.note-selected]="note.selected" (click)="selectNote(note)">
+      <h2>{{note.title}}</h2>
+      <hr>
+      <p>{{note.description}}</p>
+      <span>Selected: {{note.selected}}</span>
+    </div>
+  }
+</section>

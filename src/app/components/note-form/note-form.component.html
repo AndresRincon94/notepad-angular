@@ -1,0 +1,17 @@
+<form class="note-form" (submit)="onSubmitHandler()">
+  <h2>{{ isNewNote ? 'Add' : 'Modify' }} a note</h2>
+  <div>
+    <label>
+      Title
+      <input type="text" [(ngModel)]="currentNote.title" name="title" required>
+    </label>
+    <label>
+      Description
+      <input type="text" [(ngModel)]="currentNote.description" name="description" required>
+    </label>
+  </div>
+  <div class="buttons-container">
+    <button type="submit">Save</button>
+    <button type="button" (click)="unSelectNote()">Cancel</button>
+  </div>
+</form>

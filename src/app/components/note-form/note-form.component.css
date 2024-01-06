@@ -1,0 +1,23 @@
+h2 {
+  text-align: center;
+}
+.note-form {
+  margin-top: 30px;
+}
+
+.note-form label {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.note-form input {
+  width: 50%;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}

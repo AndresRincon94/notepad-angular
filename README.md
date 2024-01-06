@@ -1,27 +1,43 @@
-# Notepad
+´´Angular Notepad App´´
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
+´´Introduction
 
-## Development server
+Notepad App is a simple list of notes you can select and simple form that can be used for
+creating new notes or editing existing ones.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+´Problem statement´
 
-## Code scaffolding
+Your task is to complete simple notes application using provided NotesService to save and
+read notes. Keep in mind the following requirements:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+´1. Use NotesService to populate list of notes´
 
-## Build
+  - Each item in list should show note title
+  - Selecting note should highlight it
+  - New saved notes should be added to the end of the list and selected
+  - Changes in form 􀅣elds should not re􀅤ect on the list until note is saved
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+´2. Note Form´
 
-## Running unit tests
+  - Form should be displayed only when note is selected or there is new note
+  - It should be empty when new note is selected
+  - When note is selected form should show note details
+  - Note should be saved when Save button is clicked
+  - When required 􀅣elds are empty, error should be displayed
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+´3. A bit of style´
 
-## Running end-to-end tests
+  - When note is set to favorite and saved it should have bigger font (16px)
+  - Note title on the list should have note's color
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+´IMPORTANT´
 
-## Further help
+Please, do not use Reactive Forms and under no condition do not change any test 􀅣les in the
+process.
+Do not change the public API of the NotesService and the AppComponent classes (public API is
+public methods and public properties). Even if you locally change the public API of these
+classes along with respective tests, be aware that eventually your solution will be executed
+against original tests and original public API. Breaking the public API, which the tests depend
+on, might result in lower score.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+For more details please run task inside devskiller and see failing tests.
